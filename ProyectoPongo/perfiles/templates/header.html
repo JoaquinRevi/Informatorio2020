@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,700&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'ProyectoPongoApp/css/style.css' %}">	
+</head>
+<body>
+<header class="encabezado">
+		<div class="headercontainer">
+			<div class= "logo">Pongo</div>
+			<nav class= "navheader">
+				<a class ="navheader__a {% if request.path == '/'%}active {% endif %}" href="{% url 'inicio'%}">Inicio</a>
+				<a class ="navheader__a {% if request.path == '/Nosotros'%}active {% endif %}" href="{% url 'nosotros'%}">Nosotros</a>
+	  			<a class ="navheader__a {% if request.path == '/Contactanos'%}active {% endif %}" href="{% url 'contactanos'%}">Contactanos</a>
+	  			<a class ="navheader__a {% if request.path == '/Ayuda'%}active {% endif %}" href="{% url 'ayuda'%}">Ayuda</a>
+	  		</nav>
+	  				<div class ="perfil-contenedor">
+			<img class = "perfil-img" src="/static/img/defaultperfil.jpg">
+				<ul class = "registro">
+					{% if request.user.is_authenticated %}
+					<li><a class ="a-registro" href="{% url 'perfil'%}">Mi Perfil</a></li>
+					<li><a class ="a-registro" href="{% url 'logout'%}">Cerrar Sesión</a></li>		
+
+					{% else %}
+					<li><a class ="a-registro" href="{% url 'registro'%}">Registrarse</a></li>
+					<li><a class ="a-registro" href="{% url 'login'%}">Ingresar</a></li>
+
+					{% endif %}
+
+				</ul>
+
+		</div>	
+		</div>
+
+
+	</header>
+	{% block content%}
+
+	{% endblock %}
+
+	<footer class = "pie">
+				<div class="piecontainer">
+			<div class= "logopie">Pongo</div>
+		</div>
+
+	</footer>
+
+</body>
+</html>

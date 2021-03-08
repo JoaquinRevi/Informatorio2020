@@ -1,0 +1,401 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+/* ---------------------------------- BASE ---------------------------------- */
+
+body{
+  background-image: url("/static/ProyectoPongoApp/img/paws3.jpg"); 
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+}
+
+.encabezado{
+  background: 
+  linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, black 25%, transparent 25%),
+  linear-gradient(45deg, black 25%, transparent 25%); 
+  background-size: 2em 2em;
+  background-color: #232323;
+  overflow: hidden;
+  width: 100%;
+  min-height: 90px;
+  margin-bottom: 20px10;
+  position: static;
+
+  
+
+}
+
+.headercontainer{
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+
+  
+
+
+}
+.logo{
+  color: #fff;
+  font-size: 50px;
+  font-family: Berlin Sans FB;
+  line-height: 70px;
+  float: left;
+  letter-spacing: 7px;
+  
+  margin-left: 50px;  
+
+
+}
+
+.pie{
+   background: 
+  linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, black 25%, transparent 25%),
+  linear-gradient(45deg, black 25%, transparent 25%); 
+  background-size: 2em 2em;
+  background-color: #232323;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+
+.piecontainer{
+  width: 90%;
+  max-width: 1180px;
+  padding: 10px;
+  overflow: hidden;
+
+
+}
+
+.logopie{
+  color: #fff;
+  font-size: 50px;
+  font-family: Berlin Sans FB;
+  line-height: 70px;
+  float: right;
+  letter-spacing: 7px;
+ 
+
+
+}
+
+
+
+.navheader{
+  line-height: 70px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+ 
+  margin-left: 500px;
+
+}
+
+.navheader__a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial Narrow;
+  font-weight: bold;
+  padding: 20px 30px;
+  line-height: normal;
+  font-size: 25px;
+  letter-spacing: 1px;
+
+}
+
+.navheader__a:hover{
+  color: #ddd9  ;
+  border-bottom: 5px solid #ddd9;
+
+  }
+ 
+.active{
+  color: #fff;
+  border-bottom: 5px solid #fff;
+  text-shadow: 0px 0px 40px #fff,0px 0px 40px #fff;
+
+}
+
+.perfil-nav{
+
+}
+
+.perfil-img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+
+
+
+}
+.perfil-contenedor{
+
+       display: inline-block;
+       float: right;
+       margin-right: 50px;
+       position: relative;
+       transition: all 1s;
+       
+
+
+
+}
+.registro{
+
+
+}
+
+.a-registro{
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  transition: all 1s;
+
+
+
+}
+
+.perfil-contenedor:hover > .registro{
+  transition: all 1s;
+
+}
+
+/* ---------------------------------- CONTACTANOS ---------------------------------- */
+
+
+.cont-contenedor{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #222;
+  margin: 50px 30px;
+  padding: 20px;
+
+
+}
+
+.form{
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.form__input{
+  width:  100%;
+  padding: 7px;
+  margin: 9px 0;
+  border: none;
+  border-bottom: 3px solid #094;
+  background: #333;
+  color: #fff;
+}
+
+.form__input:focus{
+  background: linear-gradient(to bottom, #333, #444);
+  outline: none;
+  border-bottom: 3px solid #0d4;
+}
+
+.form textarea{
+  min-height: 140px;
+  resize: none;
+
+}
+
+.form-img{
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  min-width: 300px;
+  max-width: 400px;
+
+}
+
+
+
+.form-img img{
+  width: 100%;
+
+
+}
+
+.cont-contenedor-img{
+
+   margin: auto;
+
+}
+
+.form-img div{
+  padding: 10px;
+  background:#222;
+
+}
+
+.cont-contenedor-img div{
+  background-color: #555;
+  border-radius: 50%;
+  text-align: center;
+  padding: 40px;
+
+}
+
+.form__input-submit{
+  width:  100%;
+  padding: 7px;
+  margin: 9px 0;
+  border: none;
+  color: #fff;
+  background: #094;
+  padding: 12px;
+  font-size: 17px;
+  letter-spacing: 2px;
+
+}
+
+.form__input-submit:hover{
+    background: linear-gradient(to bottom, #094, #0a4);
+
+}
+
+
+/* ---------------------------------- POSTS ---------------------------------- */
+
+
+
+.main-contenedor{
+  flex-direction: column;
+  border: 4px solid #074;
+  background-color: #eee;
+  margin: 25px auto;
+  width: 1000px;
+  height: 100%;
+  box-shadow: 2px 2px 10px 5px #888;
+
+
+}
+
+.post-contenedor{
+  padding: 50px;
+  flex-basis: 20px;
+
+}
+
+.post{
+  display: flex;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #eee;
+
+}
+
+.post__img img{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  box-shadow: 4px 4px 25px 0px #000;
+
+}
+
+.contenido{
+
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+ .post-titulo{
+  text-align: center;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 3em;
+  text-shadow: 10px 10px 50px  #000;
+  margin: 0.67em 0;
+  letter-spacing: 4px;
+  padding: 20px;
+  box-shadow: 4px 4px 25px 0px #000;
+  background-color: #eee;
+  width: 800px;
+  margin: 20px;
+  
+}
+
+.post-texto{
+  padding: 20px;
+  margin-top:-20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #eee;
+  box-shadow: 4px 4px 25px 0px #000;
+
+
+}
+
+
+/* ---------------------------------- AYUDA ---------------------------------- */
+
+
+.ayuda-contenedorflex{
+  display: flex;
+  flex-direction: column;
+
+  border: 4px groove #094;
+  margin: 25px auto;
+  width: 1000px;
+  height: 1500px;
+
+}
+
+.ayuda-contenedor{
+  padding: 20px;
+}
+
+
+
+/* ---------------------------------- NOSOTROS ---------------------------------- */
+
+
+.nos-contenedorflex{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #094, transparent);
+  border: 4px inset #0f4;
+  margin: 25px auto;
+  width: 1000px;
+  height: 1500px;
+
+}
+
+.nos-contenedor{
+  padding: 50px;
+  flex-basis: 20px;
+
+  border-color: red;
+  flex-grow: 2;
+  flex-shrink: 0;
+  color: white;
+}
+
+
+/* ---------------------------------- Registro ---------------------------------- */
+

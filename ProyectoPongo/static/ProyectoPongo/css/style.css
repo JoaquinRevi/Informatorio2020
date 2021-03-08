@@ -1,0 +1,75 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+body{
+  background-image: url("/static/ProyectoPongoApp/img/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+}
+
+.encabezado{
+  background-color: rgba(0, 255, 255, 0.7);
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px10;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: static;
+}
+
+.container{
+  width: 90%;
+  max-width: 1180px;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+
+}
+
+.logo{
+  color: #fff;
+  font-size: 50px;
+  font-family: Berlin Sans FB;
+  line-height: 70px;
+  float: left;
+  letter-spacing: 7px;
+
+
+}
+
+.navheader{
+  line-height: 70px;
+  float: right;
+
+}
+
+.navheader__a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial Narrow;
+  font-weight: bold;
+  padding: 20px 30px;
+  line-height: normal;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.navheader__a:hover{
+  color: #4449  ;
+  border-bottom: 5px solid #4449;
+
+  }
+ 
+.active{
+  color: #444e;
+  border-bottom: 5px solid #444e;
+
+}

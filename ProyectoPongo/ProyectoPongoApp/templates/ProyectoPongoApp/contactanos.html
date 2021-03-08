@@ -1,0 +1,49 @@
+{% extends "header.html" %}
+
+{% load static %}
+
+{% block content %}
+<style type="text/css">
+	body{
+		background-image: url("/static/ProyectoPongoApp/img/paws2.jpg");
+        }
+    .pie{
+    	position: fixed;
+ 		bottom: 0;
+  		left: 0;
+    }
+</style>
+	<div class= "cont-contenedor wrapper">
+		<form class= "form">
+			<div class= "form__seccion">
+				<input class= "form__input" type="text" name="" placeholder="Escriba el Asunto">
+
+
+			</div>	
+			<div class= "form__seccion">
+				<input class= "form__input" type="Email" name="" placeholder="Escriba su Email">
+
+			</div>
+			<div class= "form__seccion">
+				<textarea class= "form__input" placeholder="Escriba su Mensaje"></textarea>
+
+			</div>
+			<div class= "form__seccion">
+				<input class= "form__input-submit" type="submit" name="">
+
+			</div>
+
+		</form>
+		<div class= "form-img">
+			<div class= "cont-contenedor-img">
+				<div>
+					<img src="https://img.pngio.com/mail-icon-with-png-and-vector-format-for-free-unlimited-download-mail-icon-png-512_512.png">
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+
+{% endblock %}

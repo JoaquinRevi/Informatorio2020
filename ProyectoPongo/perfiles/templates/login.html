@@ -1,0 +1,60 @@
+{% extends "header.html" %}
+
+
+{% load static %}
+
+{% block content %}
+<style type="text/css">
+.registro-conteiner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #eee;
+  margin: 50px 30px;
+  padding: 20px;
+}
+
+.form-registro{
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+
+}
+.pie{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+input{
+  width:  50%;
+  padding: 7px;
+  margin: 9px;
+  border: none;
+  border-bottom: 3px solid #094;
+  background: #333;
+  color: #fff;
+}
+
+input:focus{
+  background: linear-gradient(to bottom, #333, #444);
+  outline: none;
+  border-bottom: 3px solid #0d4;
+}
+
+
+</style>
+<h2>Iniciar sesión</h2>
+
+<form method="POST">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button type="submit">Login</button>
+</form>
+
+<hr />
+<a href="/registro">Registrar usuario</a>
+{% endblock %}
+
