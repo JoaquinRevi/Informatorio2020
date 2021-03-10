@@ -4,23 +4,8 @@
 
 {% block content %}
 <style type="text/css">
-.registro-conteiner {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: #eee;
-  margin: 50px 30px;
-  padding: 20px;
-}
 
-.form-registro{
-  min-width: 400px;
-  flex: 1;
-  text-align: center;
-  padding: 30px;
 
-}
 
 .pie{
     position: fixed;
@@ -47,13 +32,11 @@ input:focus{
 
 </style>
 <h2>Registrar usuario</h2>
-
-<form method="POST">
-    {{ form.as_p }}
-    {% csrf_token %}
-    <button type="submit">Registrar</button>
-</form>
-
+  <form method="POST">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <button type="submit">Registrar</button>
+  </form>
 <hr />
 
 <a href="/login">Iniciar sesión</a>

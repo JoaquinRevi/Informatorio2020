@@ -19,7 +19,7 @@ class Post(models.Model):
 	titulo = models.CharField(max_length = 20)
 	contenido = models.CharField(max_length = 300)
 	autor = models.ForeignKey(User, on_delete = models.CASCADE, related_name = 'posts')
-	imagen = models.ImageField(upload_to = "postmedia")
+	imagenp = models.ImageField(upload_to = "postmedia")
 	categorias = models.ManyToManyField(Categoria)
 	creado = models.DateTimeField(auto_now_add = True)
 	actualizado = models.DateTimeField(auto_now = True)

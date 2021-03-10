@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Usuario(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
-	imagen = models.ImageField(default= '/static/img/defaultperfil.jpg',upload_to = "perfilesmedia")
+	imagenu = models.ImageField(upload_to = "perfilesmedia")
 	biografia = models.CharField(max_length = 300)
 
 	def __str__(self):
