@@ -207,7 +207,7 @@ body{
   border: none;
   border-bottom: 3px solid #074;
   background: #eee;
-  color: #fff;
+  color: #000;
 }
 
 .form__input:focus{

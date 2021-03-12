@@ -4,7 +4,7 @@ from django.contrib.auth import logout as salir
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as ingresar
-from perfiles.forms import RegistroUsuario
+from perfiles.forms import RegistroUsuario, PerfilForm
 from perfiles.models import Usuario
 
 def register(request):
@@ -47,3 +47,16 @@ def logout(request):
 def perfil(request):
     perfil = Usuario.objects.all()
     return render(request,"perfil.html", {"perfil": perfil})
+
+def perfiledit(request):
+    if request.method == 'POST':
+        form = PerfilForm(request.POST,request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('perfil')
+    else:
+        form = PerfilForm()
+    return render(request, 'perfiledit.html', {'form': form})
+
+
+

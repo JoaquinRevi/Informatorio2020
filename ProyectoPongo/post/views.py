@@ -3,6 +3,7 @@ from post.models import Post, Categoria
 from django.views.generic import CreateView
 from .forms import PostForm
 from django.utils import timezone
+from django.contrib.auth.decorators import login_required
 
 
 
@@ -12,6 +13,7 @@ def inicio(request):
 	posts = Post.objects.all()
 	return render(request,"posts/index.html", {"posts": posts})
 
+@login_required
 def PostCreation(request):
 	if request.method == 'POST':
 		form = PostForm(request.POST,request.FILES)

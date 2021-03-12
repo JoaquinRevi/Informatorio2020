@@ -5,12 +5,6 @@ from django.template import Template, Context
 
 
 
-
-
-def contactanos(request):
-	
-	return render(request,"ProyectoPongoApp/contactanos.html")	
-
 def nosotros(request):
 	return render(request,"ProyectoPongoApp/nosotros.html")
 

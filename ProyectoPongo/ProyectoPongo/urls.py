@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ProyectoPongoApp.urls')),
     path('', include("post.urls")),
-    path('', include("perfiles.urls"))
+    path('', include("perfiles.urls")),
+    path('', include("contacto.urls")),
 ] 

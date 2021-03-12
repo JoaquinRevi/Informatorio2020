@@ -1,5 +1,7 @@
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from django import forms
+from .models import Usuario
 
 
 class RegistroUsuario(UserCreationForm):
@@ -19,3 +21,13 @@ class RegistroUsuario(UserCreationForm):
 					'email': 'Correo',
 
 		}
+
+class PerfilForm(forms.ModelForm):
+
+	class Meta:
+		model = Usuario
+
+		fields = [
+					'imagenu',
+					'biografia',
+		]
